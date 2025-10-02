@@ -1,7 +1,7 @@
 === Easyship WooCommerce Shipping Rates ===
 Contributors: goeasyship, sunnycyk, alohachen, paulld, berniechiu, CarlosLongarela, joaosaraiva
 Additional contributors: Anna Holubiatnikova, Andy Le, Anne Ju, Oleksandr Avoiants, YenJung Chen, John Hsu
-Tags: shipping, shipping rates, shipping price, shipping cost, shipping quotes, free shipping, dynamic shipping, automatic shipping, shipping calculator, calculate shipping cost, easyship, taxes, international shipping, ups, dhl, fedex, post, woocommerce, multiple shipping rates, shipping api, shipping discount, shipping labels, courier calculated shipping
+Tags: woocommerce, shipping, shipping-rates, shipping-labels, shipping-calculator
 Requires at least: 4.7
 Tested up to: 6.8.3
 Requires PHP: 7.1
@@ -9,7 +9,7 @@ Stable tag: 0.9.10
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Easyship for WooCommerce saves you time and money on shipping. Access the largest courier network with seamless checkout, automated taxes and duties, label generation and more.
+Easyship for WooCommerce saves you time and money with live courier rates, seamless checkout, automated taxes & duties, and shipping label creation.
 
 == Description ==
 

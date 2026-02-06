@@ -277,7 +277,9 @@ final class Easyship_Legacy_Guard {
 		$legacy_dir_lookup = array_flip(
 			array_filter(
 				self::LEGACY_DIRS,
-				static fn( $dir ) => Easyship_Constants::PLUGIN_SLUG !== $dir
+				static function ( $dir ) {
+					return Easyship_Constants::PLUGIN_SLUG !== $dir;
+				}
 			)
 		);
 		$blocked           = array();
@@ -315,7 +317,9 @@ final class Easyship_Legacy_Guard {
 		$legacy_dir_lookup = array_flip(
 			array_filter(
 				self::LEGACY_DIRS,
-				static fn( $dir ) => Easyship_Constants::PLUGIN_SLUG !== $dir
+				static function ( $dir ) {
+					return Easyship_Constants::PLUGIN_SLUG !== $dir;
+				}
 			)
 		);
 		$blocked           = array();

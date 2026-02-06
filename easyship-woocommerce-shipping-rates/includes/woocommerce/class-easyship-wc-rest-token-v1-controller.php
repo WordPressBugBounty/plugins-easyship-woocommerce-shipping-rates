@@ -126,7 +126,7 @@ final class Easyship_WC_REST_Token_V1_Controller extends WP_REST_Controller {
 			ARRAY_A
 		);
 
-		return ! empty( $row ) ? false : $row;
+		return ! empty( $row ) ? $row : false;
 	}
 
 	/**
@@ -286,7 +286,7 @@ final class Easyship_WC_REST_Token_V1_Controller extends WP_REST_Controller {
 		$item = $this->prepare_item_for_database( $request );
 		try {
 			Easyship_WooCommerce_Integration::set_global_api_access_token( $item->token );
-		} catch ( \Throwable ) {
+		} catch ( \Throwable $e ) {
 			return new WP_Error(
 				'easyship_internal_error',
 				__( 'Something went wrong.', 'easyship-woocommerce-shipping-rates' ),

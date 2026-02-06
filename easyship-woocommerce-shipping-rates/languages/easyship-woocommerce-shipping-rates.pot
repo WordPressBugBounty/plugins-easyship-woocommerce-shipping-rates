@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easyship 0.9.10\n"
+"Project-Id-Version: Easyship 0.9.12\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easyship-woocommerce-shipping-rates\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-10-02T11:43:00+00:00\n"
+"POT-Creation-Date: 2025-11-29T20:08:13+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easyship-woocommerce-shipping-rates\n"
@@ -63,34 +63,34 @@ msgid "Easyship: legacy plugins were network-active and have been deactivated to
 msgstr ""
 
 #. translators: %1$s: current plugin slug, %2$s: canonical plugin slug
-#: includes/class-easyship-legacy-guard.php:354
+#: includes/class-easyship-legacy-guard.php:358
 #, php-format
 msgid "Easyship: this plugin appears to be running from the \"%1$s\" slug. It is recommended to use the canonical slug \"%2$s\" instead for consistency and updates."
 msgstr ""
 
 #. translators: %s: WooCommerce plugin URL
-#: includes/class-easyship-plugin.php:117
+#: includes/class-easyship-plugin.php:122
 #, php-format
 msgid "Easyship requires WooCommerce to be installed and active. You can download %s here."
 msgstr ""
 
 #. translators: %s: list of missing PHP extensions
-#: includes/class-easyship-plugin.php:155
+#: includes/class-easyship-plugin.php:159
 #, php-format
 msgid "Easyship requires the following PHP extensions: %s. Please enable them and try again."
 msgstr ""
 
 #. translators: %s: URL to Plugins admin screen
-#: includes/class-easyship-plugin.php:163
+#: includes/class-easyship-plugin.php:167
 #, php-format
 msgid "Return to the Plugins page: %s"
 msgstr ""
 
-#: includes/class-easyship-plugin.php:164
+#: includes/class-easyship-plugin.php:168
 msgid "Plugins"
 msgstr ""
 
-#: includes/class-easyship-plugin.php:166
+#: includes/class-easyship-plugin.php:170
 msgid "Plugin activation halted"
 msgstr ""
 

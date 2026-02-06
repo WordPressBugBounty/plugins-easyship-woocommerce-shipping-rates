@@ -14,5 +14,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	die(); // If uninstall.php is not called by WordPress, die.
 }
 
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-easyship-plugin.php';
+define( 'EASYSHIP_PLUGIN_FILE', __FILE__ );
+
+require_once __DIR__ . '/includes/class-easyship-plugin.php';
 Easyship_Plugin::uninstall();

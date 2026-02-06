@@ -275,7 +275,12 @@ final class Easyship_Logger {
 			$needles = apply_filters( 'easyship_logger_redact_keys', self::REDACT_KEYS );
 
 			// Build a single case-insensitive regex like: ~(authorization|password|secret|token|_key)~i .
-			$parts   = array_map( static fn( $s ) => preg_quote( (string) $s, '~' ), (array) $needles );
+			$parts   = array_map(
+				static function ( $s ) {
+					return preg_quote( (string) $s, '~' );
+				},
+				(array) $needles
+			);
 			$pattern = '~(' . implode( '|', $parts ) . ')~i';
 		}
 

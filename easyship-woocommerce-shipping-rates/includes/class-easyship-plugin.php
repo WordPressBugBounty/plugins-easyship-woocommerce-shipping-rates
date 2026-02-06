@@ -11,6 +11,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+// EASYSHIP_PLUGIN_FILE must be defined by this time!
+define( 'EASYSHIP_PATH', plugin_dir_path( EASYSHIP_PLUGIN_FILE ) );
+define( 'EASYSHIP_URL', plugin_dir_url( EASYSHIP_PLUGIN_FILE ) );
+define( 'EASYSHIP_BASENAME', plugin_basename( EASYSHIP_PLUGIN_FILE ) );
+
 require_once EASYSHIP_PATH . 'includes/class-easyship-constants.php';
 require_once EASYSHIP_PATH . 'includes/class-easyship-utils.php';
 require_once EASYSHIP_PATH . 'includes/class-easyship-logger.php';
@@ -128,7 +133,8 @@ final class Easyship_Plugin {
 	 * This method is static to allow it to be called from uninstall.php.
 	 */
 	public static function uninstall(): void {
-		// This is invoked on a standalone lifecycle than the typical WordPress plugin. So, we need to load the integration explicitly.
+		// This is invoked on a standalone lifecycle than the typical WordPress plugin, and so the initial entrypoint has not been invoked.
+		// Therefore, we need to load the integration explicitly.
 		self::load_woocommerce_integration();
 		Easyship_WooCommerce_Integration::uninstall();
 	}
@@ -136,8 +142,6 @@ final class Easyship_Plugin {
 	/**
 	 * This function hooks on WordPress to perform a verification at plugin activation, ensuring that all required PHP extensions are present.
 	 * If some requirements are not present, the plugin is deactivated, and a notice is shown to the user.
-	 *
-	 * @since 0.9.10 Verify PHP extensions on activation.
 	 */
 	private function ensure_requirements_are_present(): void {
 		$missing = array();

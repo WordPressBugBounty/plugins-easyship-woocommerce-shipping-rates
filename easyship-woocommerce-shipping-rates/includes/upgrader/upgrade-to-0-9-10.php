@@ -381,7 +381,7 @@ return new class() {
 
 				// Drop legacy API credentials in instance if empty or if instance token exists.
 				$removed_credentials_inst = array();
-				$inst_token               = $adjust_to_token( $inst_settings['api_access_token'] );
+				$inst_token               = $adjust_to_token( $inst_settings['api_access_token'] ?? '' );
 
 				if ( ! empty( $inst_token ) ) {
 					// Instance token present -> drop both credentials if they exist (even if non-empty).

@@ -2,11 +2,11 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easyship 0.9.10\n"
+"Project-Id-Version: Easyship 0.9.11\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easyship-"
 "woocommerce-shipping-rates\n"
-"POT-Creation-Date: 2025-09-13T15:14:24+00:00\n"
-"PO-Revision-Date: 2025-09-13 19:40+0100\n"
+"POT-Creation-Date: 2025-10-10T10:13:22+00:00\n"
+"PO-Revision-Date: 2025-10-10 11:15+0100\n"
 "Last-Translator: João Saraiva (Easyship) <joao.saraiva@easyship.com>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -82,7 +82,7 @@ msgstr ""
 "desactivado para evitar conflictos: %s"
 
 #. translators: %1$s: current plugin slug, %2$s: canonical plugin slug
-#: includes/class-easyship-legacy-guard.php:354
+#: includes/class-easyship-legacy-guard.php:358
 #, php-format
 msgid ""
 "Easyship: this plugin appears to be running from the \"%1$s\" slug. It is "
@@ -94,7 +94,7 @@ msgstr ""
 "coherencia y las actualizaciones."
 
 #. translators: %s: WooCommerce plugin URL
-#: includes/class-easyship-plugin.php:117
+#: includes/class-easyship-plugin.php:122
 #, php-format
 msgid ""
 "Easyship requires WooCommerce to be installed and active. You can download "
@@ -104,7 +104,7 @@ msgstr ""
 "%s aquí."
 
 #. translators: %s: list of missing PHP extensions
-#: includes/class-easyship-plugin.php:155
+#: includes/class-easyship-plugin.php:161
 #, php-format
 msgid ""
 "Easyship requires the following PHP extensions: %s. Please enable them and "
@@ -114,16 +114,16 @@ msgstr ""
 "actívelas e inténtelo de nuevo."
 
 #. translators: %s: URL to Plugins admin screen
-#: includes/class-easyship-plugin.php:163
+#: includes/class-easyship-plugin.php:169
 #, php-format
 msgid "Return to the Plugins page: %s"
 msgstr "Volver a la página de plugins: %s"
 
-#: includes/class-easyship-plugin.php:164
+#: includes/class-easyship-plugin.php:170
 msgid "Plugins"
 msgstr "Plugins"
 
-#: includes/class-easyship-plugin.php:166
+#: includes/class-easyship-plugin.php:172
 msgid "Plugin activation halted"
 msgstr "Activación del plugin detenida"
 

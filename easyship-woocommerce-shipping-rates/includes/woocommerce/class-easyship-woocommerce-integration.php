@@ -204,7 +204,7 @@ final class Easyship_WooCommerce_Integration {
 
 					try {
 						$version = str_replace( '.', '_', Easyship_Constants::PLUGIN_VERSION );
-					} catch ( \Throwable ) {
+					} catch ( \Throwable $e ) {
 						// Fallback: current UTC date, e.g. 20250913.
 						$version = gmdate( 'Ymd' );
 					}

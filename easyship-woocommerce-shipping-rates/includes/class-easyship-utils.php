@@ -95,8 +95,6 @@ final class Easyship_Utils {
 	 * Not for obfuscation.
 	 *
 	 * @param string $data The value to encode.
-	 *
-	 * @since 0.9.10
 	 */
 	public static function base64_encode( string $data ): string {
 		// phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode -- Required by protocol specs.
@@ -107,8 +105,6 @@ final class Easyship_Utils {
 	 * Base64URL encode per RFC 7515 (JWT): replace +/ with -_ and strip =
 	 *
 	 * @param string $data The value to encode.
-	 *
-	 * @since 0.9.10
 	 */
 	public static function base64url_encode( string $data ): string {
 		// phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_encode -- Required by JWT specification.

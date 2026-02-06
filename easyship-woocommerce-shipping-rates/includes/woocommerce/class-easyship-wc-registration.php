@@ -97,8 +97,8 @@ final class Easyship_WC_Registration {
 			}
 
 			return $data;
-		} catch ( \Throwable $exception ) {
-			return array( 'error' => $exception->getMessage() );
+		} catch ( \Throwable $e ) {
+			return array( 'error' => $e->getMessage() );
 		}
 	}
 

@@ -1,15 +1,15 @@
 === Easyship WooCommerce Shipping Rates ===
 Contributors: goeasyship, sunnycyk, alohachen, paulld, berniechiu, CarlosLongarela, joaosaraiva
 Additional contributors: Anna Holubiatnikova, Andy Le, Anne Ju, Oleksandr Avoiants, YenJung Chen, John Hsu
-Tags: shipping, shipping rates, shipping price, shipping cost, shipping quotes, free shipping, dynamic shipping, automatic shipping, shipping calculator, calculate shipping cost, easyship, taxes, international shipping, ups, dhl, fedex, post, woocommerce, multiple shipping rates, shipping api, shipping discount, shipping labels, courier calculated shipping
+Tags: woocommerce, shipping, shipping-rates, shipping-labels, shipping-calculator
 Requires at least: 4.7
-Tested up to: 6.8.3
+Tested up to: 6.9
 Requires PHP: 7.1
-Stable tag: 0.9.10
+Stable tag: 0.9.12
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Easyship for WooCommerce saves you time and money on shipping. Access the largest courier network with seamless checkout, automated taxes and duties, label generation and more.
+Easyship for WooCommerce saves you time and money with live courier rates, seamless checkout, automated taxes & duties, and shipping label creation.
 
 == Description ==
 
@@ -130,6 +130,17 @@ Your `wp-config.php` may have `WP_HTTP_BLOCK_EXTERNAL` set as true. You will nee
 
 == Changelog ==
 
+For the complete changelog, see [changelog.txt](changelog.txt).
+
+= 0.9.12 - 2025-11-29 =
+* Added - Tested with WordPress 6.9.
+* Added - Tested with WooCommerce 10.3.5.
+
+= 0.9.11 - 2025-10-10 =
+* Fixed - Corrected PHP 7.1 compatibility.
+* Fixed - Corrected a bug that prevented OAuth2 connections from being established.
+* Fixed - Corrected a bug that prevented uninstall from working properly.
+
 = 0.9.10 - 2025-10-02 =
 * Fixed - Conforms to all WordPress Coding Standards
 * Changed - A lot of code improvements and refactors, to facilitate future maintenance and improvements
@@ -140,175 +151,6 @@ Your `wp-config.php` may have `WP_HTTP_BLOCK_EXTERNAL` set as true. You will nee
 * Added - New upgrading framework, to facilitate future upgrades.
 * Added - Tested with WordPress 6.8.3.
 * Added - Tested with WooCommerce 10.2.2.
-
-= 0.9.9 - 2023-11-09 =
-* Fix - Fixed phpcs errors from new rulesets
-* Enhance - Plugin now is compatible with HPOS system
-* Enhance - Tested up to WP 6.3.2
-* Enhance - Tested up to Woo 8.2.1
-
-= 0.9.8 - 2023-10-12 =
-* Fix - Problem with table name interpolation
-
-= 0.9.7 - 2023-08-30 =
-* Fix - Remove duplicative "Easyship" tab in the WooCommerce settings
-* Enhance - Tested up to WP 6.3.1
-* Enhance - Tested up to Woo 8.0.3
-* Fix - Remove any Easyship branding
-* Fix - Renamed plugin slug from easyship-woocommerce-shipping-rates to easyship-shipping-rates to avoid problems with WooCommerce marketplace rules
-
-= 0.9.6 - 2023-08-22 =
-* Enhance - Bumped JS file version
-
-= 0.9.5 - 2023-08-22 =
-* Fix - Fixed missed setting link in plugin section
-* Fix - Fixed problem with nonce not returning ok in JSON response
-* Fix - Fixed processing form data without nonce verification
-* Fix - Fixed several phpcs errors
-
-= 0.9.4 - 2023-08-21 =
-* Enhance - Tested up to WP 6.3
-* Enhance - Tested up to Woo 8.0.2
-
-= 0.9.2 - 2023-08-17 =
-* Fix - Fixed AJAX nonce missing issue
-
-= 0.9.1 - 2023-07-27 =
-* Enhance - Security: Added nonce to AJAX request
-* Enhance - Security: Check that the user has admin capabilities on methods that create, delete or update data.
-* Fix - Fixed https://www.wordfence.com/threat-intel/vulnerabilities/wordpress-plugins/easyship-woocommerce-shipping-rates/easyship-woocommerce-shipping-rates-089-missing-authorization-via-multiple-ajax-actions
-
-= 0.9.0 - 2023-07-21 =
-* Enhance - Tested up to WP 6.2.2
-* Enhance - Tested up to Woo 7.9.0
-* Enhance - Added Spanish translation
-* Enhance - Changed function names and file names to acomplish WordPress Standards
-* Enhance - Changed code to acomplish WordPress Standards
-* Enhance - Escaped all translations
-* Enhance - Checked that WooCommerce is active
-
-= 0.8.9 - 2023-02-03 =
-* Enhance - Tested up to 6.1
-
-= 0.8.8 - 2022-12-13 =
-* Enhance - Return more error data when the Enable button fails
-
-= 0.8.7 - 2022-12-08 =
-* Enhance - Fix Warning: A non-numeric value encountered in easyship-shipping.php
-
-= 0.8.6 - 2022-01-03 =
-* Enhance - tested up to 5.8
-
-= 0.8.5 - 2021-03-03 =
-* Fix - Wrong declared customs value for rate at checkout
-
-= 0.8.4 - 2020-12-24 =
-* Enhance - Send sku for rate at checkout
-
-= 0.8.3 - 2020-09-18 =
-* Fix - Send address
-* Fix - Add session_write_close
-
-= 0.8.2 - 2020-07-16 =
-* Fix - Duplicate session sent
-
-= 0.8.1 - 2020-06-11 =
-* Fix - Show rates when disabled
-* Fix - Dimensions type error
-
-= 0.8.0 - 2020-05-12 =
-* Enhance - Support Multisite and enable button
-
-= 0.7.0 - 2020-04-13 =
-* Enhance - Update app description
-
-= 0.6.0 - 2019-12-23 =
-* Enhance - Update app description
-
-= 0.5.9 - 2019-07-11 =
-* Fix - Some clients experience errors
-
-= 0.5.8 - 2019-07-08 =
-* Fix - Cannot manually save token
-* Enhance - Update description
-
-= 0.5.6 - 2019-06-20 =
-* Enhance - Support newer woocommerce version
-
-= 0.5.5 - 2019-04-23 =
-* Enhance - Change default insurance
-* Fix - Woocs plugin shipping price compatibility
-
-= 0.5.3 - 2019-02-13 =
-* Enhance - Supports Woocs Plugin (Paid Version) with multi-currency checkout
-
-= 0.5.2 - 2019-01-14 =
-* Enhance - support meta tag
-
-= 0.5.1 - 2018-08-01 =
-* Hotfix - no need to enable if Access Token existed
-
-= 0.5.0 - 2018-07-30 =
-* Hotfix - js file
-
-= 0.4.9 - 2018-07-30 =
-* Enhance - integrate Easyship from WooCommerce
-* NOTE - PHP package: 'php-curl' is required
-
-= 0.4.8 - 2018-07-04 =
-* Enhance - send city when requesting rates
-
-= 0.4.7 - 2018-06-14 =
-* Enhance - add Easyship into shipping method
-* Enhance - remove non-ship items
-
-= 0.4.6 - 2018-06-11 =
-* Enhance - send state when requesting rates
-
-= 0.4.5 - 2018-06-11 =
-* Hotfix - no rates on cart page
-
-= 0.4.4 - 2018-05-15 =
-* Enhance - support discount
-
-= 0.4.3 - 2017-11-23 =
-* Enhance - extend timeout
-
-= 0.4.2 - 2017-11-01 =
-* Enhance - Links to Settings from installed plugins page
-
-= 0.4.1 - 2017-11-01 =
-* Enhance - WooCommerce Currency Switcher support
-
-= 0.4.0 - 2017-9-25 =
-* support access token
-* support product feature
-* remove settings
-
-= 0.2.9 - 2017-7-19 =
-* Update Easyship endpoints
-
-= 0.2.8 - 2017-7-6 =
-* Enhance - fix WCML cache
-* Update Easyship sandbox endpoint
-
-= 0.2.7 - 2017-6-26 =
-* Enhance - WooCommerce 3.0 support
-
-= 0.2.6 - 2017-6-6 =
-* Enhance - WCML support
-* Add Easyship header to API request
-
-= 0.2.5 - 2017-05-22 =
-* Enhance - fix warning and update Easyship url
-
-= 0.2.4 - 2017-02-10 =
-* Enhance - wording
-
-= 0.2.3 =
-* Feature - Easyship shipping method
-* Feature - Auto create category
-* Feature - Sandbox mode
 
 == Upgrade Notice ==
 

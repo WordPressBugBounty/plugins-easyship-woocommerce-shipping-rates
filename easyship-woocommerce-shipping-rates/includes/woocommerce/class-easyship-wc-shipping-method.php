@@ -706,7 +706,7 @@ final class Easyship_WC_Shipping_Method extends WC_Shipping_Method {
 				'width'                  => $this->default_dimension( $this->dimension_to_cm( $product->get_width() ) ),
 				'length'                 => $this->default_dimension( $this->dimension_to_cm( $product->get_length() ) ),
 				'declared_currency'      => $currency,
-				'declared_customs_value' => $this->declared_customs_value( $item['line_subtotal'], $item['quantity'] ),
+				'declared_customs_value' => $this->declared_customs_value( (float) $item['line_subtotal'], (float) $item['quantity'] ),
 				'identifier_id'          => $identifier_id,
 				'sku'                    => $product->get_sku(),
 				'quantity'               => $item['quantity'],

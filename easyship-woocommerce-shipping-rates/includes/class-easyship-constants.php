@@ -26,7 +26,7 @@ final class Easyship_Constants {
 	/**
 	 * This plugin's version.
 	 */
-	public const PLUGIN_VERSION = '0.9.12';
+	public const PLUGIN_VERSION = '0.9.13';
 
 	/**
 	 * The Easyship API base URL.

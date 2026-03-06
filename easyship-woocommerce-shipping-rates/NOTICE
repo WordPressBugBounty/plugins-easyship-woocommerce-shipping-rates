@@ -1,0 +1,31 @@
+Easyship WooCommerce Shipping Rates
+Plugin slug: easyship-woocommerce-shipping-rates
+Text domain: easyship-woocommerce-shipping-rates
+
+Copyright (c) 2017-2026 Easyship (https://www.easyship.com/)
+
+License
+-------
+This program is free software: you can redistribute it and/or modify it under the terms
+of the GNU General Public License as published by the Free Software Foundation, either
+version 3 of the License, or (at your option) any later version.
+See the LICENSE file for the full license text.
+
+What this plugin does (distribution notes)
+------------------------------------------
+This plugin registers an Easyship shipping method/integration for WooCommerce and makes
+network requests to Easyship services to authenticate and fetch shipping rates (e.g., via
+OAuth2/JWT assertion + rate endpoints).
+
+Trademarks
+----------
+WordPress® is a trademark of the WordPress Foundation.
+Woo® / WooCommerce® are trademarks of Automattic Inc.
+This project is not affiliated with, endorsed by, or sponsored by the WordPress Foundation
+or Automattic Inc.
+
+Third-party software
+--------------------
+This plugin does not include third-party PHP libraries.
+It runs on top of WordPress and WooCommerce, which are separate projects with their own
+licenses and notices.

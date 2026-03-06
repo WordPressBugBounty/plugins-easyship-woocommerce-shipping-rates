@@ -5,7 +5,7 @@ Tags: woocommerce, shipping, shipping-rates, shipping-labels, shipping-calculato
 Requires at least: 4.7
 Tested up to: 6.9
 Requires PHP: 7.1
-Stable tag: 0.9.12
+Stable tag: 0.9.13
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 

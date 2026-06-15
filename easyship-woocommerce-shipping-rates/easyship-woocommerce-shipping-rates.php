@@ -3,7 +3,7 @@
  * Plugin Name: Easyship
  * Plugin URI: https://wordpress.org/plugins/easyship-woocommerce-shipping-rates/
  * Description: Easyship plugin for easy shipping method
- * Version: 0.9.13
+ * Version: 0.9.14
  * Requires at least: 4.7
  * Requires PHP: 7.1
  * Author: Easyship
@@ -18,7 +18,7 @@
  * Developer URI: https://www.easyship.com
  *
  * WC requires at least: 3.6.0
- * WC tested up to: 10.3.5
+ * WC tested up to: 10.8.1
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  *
  * @package Easyship
- * @version 0.9.13
+ * @version 0.9.14
  */
 
 declare(strict_types=1);

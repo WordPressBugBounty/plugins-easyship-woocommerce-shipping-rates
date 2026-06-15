@@ -26,15 +26,15 @@ final class Easyship_Constants {
 	/**
 	 * This plugin's version.
 	 */
-	public const PLUGIN_VERSION = '0.9.13';
+	public const PLUGIN_VERSION = '0.9.14';
 
 	/**
 	 * The Easyship API base URL.
 	 */
-	public const EASYSHIP_API_BASE_URL = 'https://api.easyship.com/';
+	public const EASYSHIP_API_BASE_URL = 'https://api.qa4.easyship.com/';
 
 	/**
 	 * The Easyship Auth base URL.
 	 */
-	public const EASYSHIP_AUTH_BASE_URL = 'https://auth.easyship.com/';
+	public const EASYSHIP_AUTH_BASE_URL = 'https://auth.qa4.easyship.com/';
 }

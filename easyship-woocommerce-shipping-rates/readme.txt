@@ -3,9 +3,9 @@ Contributors: goeasyship, sunnycyk, alohachen, paulld, berniechiu, CarlosLongare
 Additional contributors: Anna Holubiatnikova, Andy Le, Anne Ju, Oleksandr Avoiants, YenJung Chen, John Hsu
 Tags: woocommerce, shipping, shipping-rates, shipping-labels, shipping-calculator
 Requires at least: 4.7
-Tested up to: 6.9
+Tested up to: 7.0
 Requires PHP: 7.1
-Stable tag: 0.9.13
+Stable tag: 0.9.14
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -131,6 +131,12 @@ Your `wp-config.php` may have `WP_HTTP_BLOCK_EXTERNAL` set as true. You will nee
 == Changelog ==
 
 For the complete changelog, see [changelog.txt](changelog.txt).
+
+= 0.9.14 - 2026-05-29 =
+* Changed - Tested with Wordpress 7.0 and WooCommerce 10.8.1.
+
+= 0.9.13 - 2026-03-06 =
+* Fixed - Cart quantity update fatal when shipping is calculated.
 
 = 0.9.12 - 2025-11-29 =
 * Added - Tested with WordPress 6.9.

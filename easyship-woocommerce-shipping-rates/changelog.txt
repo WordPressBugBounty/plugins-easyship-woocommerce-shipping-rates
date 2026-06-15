@@ -1,5 +1,8 @@
 *** Easyship WooCommerce Shipping Rates Changelog ***
 
+= 0.9.14 - 2026-05-29 =
+* Changed - Tested with Wordpress 7.0 and WooCommerce 10.8.1.
+
 = 0.9.13 - 2026-03-06 =
 * Fixed - Cart quantity update fatal when shipping is calculated.
 

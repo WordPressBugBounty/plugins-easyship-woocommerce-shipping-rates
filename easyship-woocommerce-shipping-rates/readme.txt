@@ -5,7 +5,7 @@ Tags: woocommerce, shipping, shipping-rates, shipping-labels, shipping-calculato
 Requires at least: 4.7
 Tested up to: 7.0
 Requires PHP: 7.1
-Stable tag: 0.9.15
+Stable tag: 0.9.16
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -131,6 +131,9 @@ Your `wp-config.php` may have `WP_HTTP_BLOCK_EXTERNAL` set as true. You will nee
 == Changelog ==
 
 For the complete changelog, see [changelog.txt](changelog.txt).
+
+= 0.9.16 - 2026-08-05 =
+* Fixed - Fixed a bug where the plugin incorrectly detected WooCommerce 10.x as an old version, causing excessive error logging and checkout issues on some sites.
 
 = 0.9.15 - 2026-06-16 =
 * Fixed - Easyship Dashboard address.

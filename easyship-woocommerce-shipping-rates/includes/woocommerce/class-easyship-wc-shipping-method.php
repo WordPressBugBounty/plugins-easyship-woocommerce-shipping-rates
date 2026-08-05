@@ -670,7 +670,7 @@ final class Easyship_WC_Shipping_Method extends WC_Shipping_Method {
 			}
 
 			// Check version.
-			if ( WC()->version < '2.7.0' ) {
+			if ( version_compare( WC()->version, '2.7.0', '<' ) ) {
 				// If this item is variation, get variation product instead.
 				if ( 'variation' === $item['data']->product_type ) {
 					$product = $product_factory->get_product( $item['variation_id'] );

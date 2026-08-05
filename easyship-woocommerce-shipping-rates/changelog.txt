@@ -1,5 +1,8 @@
 *** Easyship WooCommerce Shipping Rates Changelog ***
 
+= 0.9.16 - 2026-08-05 =
+* Fixed - Fixed a bug where the plugin incorrectly detected WooCommerce 10.x as an old version, causing excessive error logging and checkout issues on some sites.
+
 = 0.9.15 - 2026-06-16 =
 * Fixed - Easyship Dashboard address.
 

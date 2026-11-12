@@ -497,6 +497,10 @@ final class Easyship_Legacy_Guard {
 		if ( is_multisite() ) {
 			$network = (array) get_site_option( 'active_sitewide_plugins', array() );
 			if ( isset( $network[ $basename ] ) ) {
+				// Only a network admin may change network-wide plugin state; a subsite admin must not.
+				if ( ! current_user_can( 'manage_network_plugins' ) ) {
+					return false;
+				}
 				deactivate_plugins( $basename, true, true );
 				return true;
 			}

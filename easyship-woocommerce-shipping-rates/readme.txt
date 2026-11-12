@@ -1,11 +1,11 @@
 === Easyship WooCommerce Shipping Rates ===
-Contributors: goeasyship, sunnycyk, alohachen, paulld, berniechiu, CarlosLongarela, joaosaraiva
+Contributors: goeasyship, sunnycyk, alohachen, paulld, berniechiu, CarlosLongarela, joaosaraiva, glauco_dsc
 Additional contributors: Anna Holubiatnikova, Andy Le, Anne Ju, Oleksandr Avoiants, YenJung Chen, John Hsu
 Tags: woocommerce, shipping, shipping-rates, shipping-labels, shipping-calculator
 Requires at least: 4.7
 Tested up to: 7.0
 Requires PHP: 7.1
-Stable tag: 0.9.16
+Stable tag: 0.9.17
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -131,6 +131,10 @@ Your `wp-config.php` may have `WP_HTTP_BLOCK_EXTERNAL` set as true. You will nee
 == Changelog ==
 
 For the complete changelog, see [changelog.txt](changelog.txt).
+
+= 0.9.17 - 2026-11-12 =
+* Fixed - Easyship API credentials are now only visible to and editable by administrators; shop managers can no longer view or change them in the shipping method settings.
+* Fixed - On multisite installs, only network administrators can deactivate the legacy Easyship plugin when it is network-activated.
 
 = 0.9.16 - 2026-08-05 =
 * Fixed - Fixed a bug where the plugin incorrectly detected WooCommerce 10.x as an old version, causing excessive error logging and checkout issues on some sites.

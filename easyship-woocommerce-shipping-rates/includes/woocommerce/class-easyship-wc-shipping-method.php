@@ -110,6 +110,15 @@ final class Easyship_WC_Shipping_Method extends WC_Shipping_Method {
 			$settings = array();
 		}
 
+		// Credentials are admin-only (shop managers can open this form); dropping the fields hides them and stops WC from saving them.
+		if ( ! current_user_can( 'manage_options' ) ) {
+			unset(
+				$fields[ self::SETTING__API_ACCESS_TOKEN ],
+				$fields[ self::DEPRECATED_SETTING__API_KEY ],
+				$fields[ self::DEPRECATED_SETTING__API_SECRET ]
+			);
+		}
+
 		// Remove irrelevant legacy fields.
 		$has_global_access_token = ! empty( Easyship_WooCommerce_Integration::get_global_api_access_token() );
 

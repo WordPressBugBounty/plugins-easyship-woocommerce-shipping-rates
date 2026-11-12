@@ -1,5 +1,9 @@
 *** Easyship WooCommerce Shipping Rates Changelog ***
 
+= 0.9.17 - 2026-11-12 =
+* Fixed - Easyship API credentials are now only visible to and editable by administrators; shop managers can no longer view or change them in the shipping method settings.
+* Fixed - On multisite installs, only network administrators can deactivate the legacy Easyship plugin when it is network-activated.
+
 = 0.9.16 - 2026-08-05 =
 * Fixed - Fixed a bug where the plugin incorrectly detected WooCommerce 10.x as an old version, causing excessive error logging and checkout issues on some sites.
 

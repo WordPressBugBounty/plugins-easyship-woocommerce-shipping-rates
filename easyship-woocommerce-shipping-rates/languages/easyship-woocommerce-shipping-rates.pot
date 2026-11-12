@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-3.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Easyship 0.9.16\n"
+"Project-Id-Version: Easyship 0.9.17\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easyship-woocommerce-shipping-rates\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-05T18:34:10+00:00\n"
+"POT-Creation-Date: 2026-11-12T17:39:56+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: easyship-woocommerce-shipping-rates\n"
@@ -154,80 +154,80 @@ msgstr ""
 msgid "Sorry, something went wrong with the shipping rates. If the problem persists, please contact us!"
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:465
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:474
 msgid "Connect"
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:476
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:518
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:485
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:527
 msgid "Connect to Easyship"
 msgstr ""
 
 #. translators: %s: Easyship URL link
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:479
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:521
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:488
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:530
 #, php-format
 msgid "Click 'Connect' to link your store with %s. You can also create an Easyship account to obtain your Access Token and paste it below."
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:487
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:529
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:496
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:538
 msgid "API Key"
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:489
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:498
 msgid "Enter your Easyship API Key."
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:492
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:535
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:501
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:544
 msgid "API Secret"
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:494
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:503
 msgid "Enter your Easyship API Secret."
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:497
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:541
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:506
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:550
 msgid "Easyship Access Token"
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:499
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:508
 msgid "Paste your Easyship Access Token. You can find this in your Easyship dashboard, in your store's page under “Access Token”. This is also the place where you will be able to set all your shipping options and rules."
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:502
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:511
 msgid "Global Skip Shipping Classes"
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:504
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:513
 msgid "Enter one or more shipping class slugs, separated by commas or spaces. Products in these classes will always be excluded from Easyship rates, in all shipping zones. The slugs can be found in \"WooCommerce > Settings > Shipping > Shipping classes\""
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:531
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:540
 msgid "Enter your Easyship API Key for this zone (optional)."
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:537
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:546
 msgid "Enter your Easyship API Secret for this zone (optional)."
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:543
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:552
 msgid "Paste an Access Token for this zone (optional). If empty, the global Access Token will be used."
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:546
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:555
 msgid "Additional Skip Shipping Classes"
 msgstr ""
 
 #. translators: %s is a list of slugs wrapped in HTML <strong>
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:550
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:559
 #, php-format
 msgid "Enter one or more shipping class slugs, separated by commas or spaces. Products in these classes will be excluded from Easyship rates in this zone, in addition to any global exclusions.<br>Globally excluded shipping classes: %s"
 msgstr ""
 
-#: includes/woocommerce/class-easyship-wc-shipping-method.php:554
+#: includes/woocommerce/class-easyship-wc-shipping-method.php:563
 msgid "(none)"
 msgstr ""
 
